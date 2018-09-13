@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crystal Collector</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body background="assets/images/pentagon_bg.png">
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container" align="center">
+
+            <h1 class="display-4" id="gameLogo">Crystal Collector</h1><br>
+        </div>
+    </div>
+
+    <div class="Container" id="main_box">
+
+
+        <div class="container" id="crystalsDiv">
+
+            <input type="image" class="crystalButton" id="button1" src="assets/images/gem_ruby.jpg" />
+            <input type="image" class="crystalButton" id="button2" src="assets/images/gem_sapphire.jpg" />
+            <input type="image" class="crystalButton" id="button3" src="assets/images/gem_emerald.jpg" />
+            <input type="image" class="crystalButton" id="button4" src="assets/images/gem_diamond.jpg" />
+        </div>
+        <div class="container" id="displays">
+            <div class="row">
+                <div class="col-5" id="goalDiv">
+                    <h3>Goal Number</h3><br>
+                    <div id="goalNumber">0</div>
+                </div>
+                <div class="col-2" id="winLossDiv">
+                    <br>
+                    <h3>Wins</h3>
+                    <div id="wins">-</div>
+                    <br><br>
+                    <h3>Losses</h3>
+                    <div id="losses">-</div>
+                </div>
+                <div class="col-5" id="scoreDiv">
+                    <h3>Current Score</h3><br>
+                    <div id="score">0</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <div class="container" id="instructions_box">
+        <h2 id="instructionsText">Instructions</h2>
+        <p>You will be given a goal number at the start of the game.</p>
+        <p>There are four crystals above. By clicking a crystal, you will add a specific amount to your score.</p>
+        <p>You win the game by matching your total score to the goal number.</p>
+        <p>You lose the game if your score goes above the goal number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time the game starts, the goal number and the values of each crystal will change.</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+
+    <div class="footer_bar"></div>
+</body>
+
+</html>
